@@ -80,19 +80,19 @@ s = [2,3,4]
 v = np.array([1,2,3])
 t = 0.5
 
-print(galilean_transformation(s,v,t))
+print(f"Galilean transformed : {galilean_transformation(s,v,t)}")
 
 s_lorentz = [2,3,4]
 relativistic_velocity = np.array([10**5,10**4,10**7])
 t_lorentz = 2
 
-print(lorentz_transformation(s_lorentz,relativistic_velocity,t_lorentz))
+print(f"Lorentz transformed : {lorentz_transformation(s_lorentz,relativistic_velocity,t_lorentz)}")
 
 vector = [2,3,4]
 angle = 100
 axis_of_rotation = "x"
 
-print(rotation_transformation(vector,angle=100,constant_axis= axis_of_rotation))
+print(f"Rotation transformed : {rotation_transformation(vector,angle=100,constant_axis= axis_of_rotation)}")
 
 
 
