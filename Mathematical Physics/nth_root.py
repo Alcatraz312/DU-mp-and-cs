@@ -1,4 +1,4 @@
-def func(x,n = 4,A = 81):
+def func(x,n = 4,A = 81): # A and n are the default given parameters
     return x**n - A     #A is the given number and n is the reciprocal power of A 
 
 #applying bisection method on the above function
