@@ -1,8 +1,7 @@
 def func(x,n = 4,A = 81):
     return x**n - A     #A is the given number and n is the reciprocal power of A 
 
-
-
+#applying bisection method on the above function
 def bisection(func, a,b, tolerance = 1e-5, max_iterations = 100):
 
     if func(a) == 0:
