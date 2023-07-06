@@ -15,7 +15,6 @@ def make_list(y : list, iterations = len(y) - 2, c = []):
 
     c.append(a_list)
     
-
     if iterations > 0:
         make_list(a_list, iterations=iterations -1,  c = c )
     
@@ -33,11 +32,8 @@ def interpolation(data_set : list , y : list , x : list, z):
     v = 1
     for i in range(len(data_set)):
         v = v*(u - i)
-
-        
         answer = answer + (v*data_set[i][0])/math.factorial(i+1)
         
-    
     return answer
 
 print(interpolation(new_data_set, y = y , x = x , z = 1.5))
